@@ -136,7 +136,7 @@ function moveDodgerLeft() {
    var left = 0
 
    function step() {
-     el.style.left = `${left -= 2}px`
+     DODGER.style.left = `${left -= 2}px`
 
      if (left > 0) {
        window.requestAnimationFrame(step)
