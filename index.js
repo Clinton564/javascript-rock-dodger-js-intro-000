@@ -87,7 +87,7 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-     var top=parseInt(rock.style.top);
+     var top=positionToInteger(rock.style.top);
      rock.style.top = `${top += 2}px`
 
      if (top < 400) {
@@ -158,7 +158,7 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   var left=parseInt(DODGER.style.left);
+   var left=positionToInteger(DODGER.style.left);
 
    function step() {
      DODGER.style.left = `${left -= 4}px`
@@ -177,7 +177,7 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   var left=parseInt(DODGER.style.left);
+   var left=positionToInteger(DODGER.style.left);
 
    function step() {
      DODGER.style.left = `${left += 4}px`
