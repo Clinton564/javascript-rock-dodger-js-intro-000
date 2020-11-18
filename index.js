@@ -120,7 +120,10 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
    if(e.which === LEFT_ARROW){
-     moveDodgerLeft()
+     moveDodgerLeft();
+   }
+   if(e.which === RIGHT_ARROW){
+     moveDodgerRight();
    }
 }
 
