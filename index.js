@@ -175,12 +175,11 @@ function moveDodgerRight() {
    function step() {
      DODGER.style.left = `${left += 4}px`
 
-     if (left < 361) {
+     if (left <= 36) {
        window.requestAnimationFrame(step)
      }
      else {
        moveDodgerLeft();
-       alert('bounce!')
      }
    }
 
