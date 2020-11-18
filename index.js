@@ -88,11 +88,11 @@ function createRock(x) {
      var top=parseInt(rock.style.top);
      rock.style.top = `${top += 2}px`
 
-     if (top < 200) {
+     if (top < 400) {
        window.requestAnimationFrame(moveRock)
      }
      else {
-       //rock.remove();
+       rock.remove();
      }
 
 
