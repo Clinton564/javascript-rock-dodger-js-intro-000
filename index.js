@@ -75,6 +75,11 @@ function createRock(x) {
   function moveRock() {
     var top=parseInt(rock.style.top);
     console.log(top);
+    rock.style.top = `${top += 1}px`
+
+    if (top < 400) {
+      window.requestAnimationFrame(rockStep)
+    }
     // implement me!
     // (use the comments below to guide you!)
     /**
@@ -86,15 +91,8 @@ function createRock(x) {
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-     function rockStep() {
-       rock.style.top = `${top += 1}px`
 
-       if (top < 400) {
-         window.requestAnimationFrame(rockStep)
-       }
-     }
-
-     window.requestAnimationFrame(rockStep)
+     window.requestAnimationFrame(moveRock)
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
