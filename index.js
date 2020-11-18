@@ -180,6 +180,7 @@ function moveDodgerRight() {
      }
      else {
        moveDodgerLeft();
+       alert('bounce!')
      }
    }
 
