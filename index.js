@@ -85,7 +85,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
      function rockStep() {
-       rock.style.top = `${left += 1}px`
+       rock.style.top = `${top += 1}px`
 
        if (top < 400) {
          window.requestAnimationFrame(rockStep)
