@@ -74,6 +74,7 @@ function createRock(x) {
    */
   function moveRock() {
     var top=parseInt(rock.style.top);
+    console.log(top);
     // implement me!
     // (use the comments below to guide you!)
     /**
