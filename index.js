@@ -122,7 +122,7 @@ window.requestAnimationFrame(moveRock)
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  ROCKS = [];
+  const ROCKS = [];
   alert("YOU LOSE!");
 }
 
