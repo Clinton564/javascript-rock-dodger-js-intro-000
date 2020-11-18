@@ -93,7 +93,6 @@ function createRock(x) {
      }
 
      window.requestAnimationFrame(rockStep)
-   }
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
